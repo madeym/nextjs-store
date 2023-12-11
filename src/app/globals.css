@@ -57,6 +57,14 @@ body::-webkit-scrollbar {
   width: fit-content !important;
 }
 
-.swiper-wrapper{
+.swiper-wrapper {
   width: fit-content !important;
- }
+}
+
+.transition-all {
+  transition-property: all !important;
+}
+
+.transition-all:hover {
+  transform: scale(1.05) !important;
+}
