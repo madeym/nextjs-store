@@ -16,12 +16,47 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+* {
+  font-family: "Calibri", sans-serif;
 }
+
+*:focus {
+  outline: none !important;
+}
+
+body {
+  background-color: white !important;
+  color: black;
+}
+
+.dropdown-active {
+  opacity: 1 !important;
+  z-index: 1 !important;
+}
+
+.dropdown-container {
+  overflow: hidden;
+  opacity: 0;
+  z-index: -1;
+  transition: all 150ms ease-in;
+  position: absolute;
+  right: 0;
+  border-radius: 10%;
+  border: 1px solid black;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.tns-item {
+  width: fit-content !important;
+}
+
+.tns-slider {
+  width: fit-content !important;
+}
+
+.swiper-wrapper{
+  width: fit-content !important;
+ }
