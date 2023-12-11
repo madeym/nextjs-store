@@ -45,7 +45,7 @@ export default function SamplePage() {
                         </div>
                         <div className="flex gap-[10px]">
                             {productImage.listImage.map((val, idx) => (
-                                <img src={val} alt="" className="w-[100px] rounded-2xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] cursor-pointer" onClick={() => changeActiveProductImage(idx)} />
+                                <img key={idx} src={val} alt="" className="w-[100px] rounded-2xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] cursor-pointer" onClick={() => changeActiveProductImage(idx)} />
                             ))}
                         </div>
                     </div>

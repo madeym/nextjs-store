@@ -1,7 +1,5 @@
 "use client"
 import Navbar from '@/_components/navbar'
-import { useEffect } from 'react'
-import { tns } from 'tiny-slider'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css/bundle'
 import { Autoplay, EffectFade } from 'swiper/modules'
